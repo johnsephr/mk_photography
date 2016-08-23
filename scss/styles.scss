@@ -1,0 +1,20 @@
+@import 'utility/mixins';
+@import 'utility/variables';
+@import 'partials/home';
+@import 'partials/gallery';
+@import 'partials/contact';
+@import 'partials/about';
+
+.container {
+    height: 1vh;
+    width: auto;
+    @include centerer;
+
+}
+
+.menu-button {
+    display:none;
+    float: none;
+    color: none;
+    text-decoration: none;
+}
