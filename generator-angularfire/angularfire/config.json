@@ -1,0 +1,16 @@
+{
+  "bower": {
+    "firebase": "2.2.2",
+    "angularfire": "1.0.0",
+    "mockfirebase": "0.11.0"
+  },
+
+  "authProviders": [
+    { "name": "Email/Password", "value": "password", "checked": true },
+    { "name": "Anonymous",      "value": "anonymous" },
+    { "name": "Facebook",       "value": "facebook"  },
+    { "name": "Google",         "value": "google"    },
+    { "name": "Twitter",        "value": "twitter"   },
+    { "name": "GitHub",         "value": "github"    }
+  ]
+}
