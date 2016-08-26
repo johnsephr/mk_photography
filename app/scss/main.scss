@@ -1,0 +1,93 @@
+@import 'utility/mixins';
+@import 'utility/variables';
+@import 'partials/home';
+@import 'partials/work';
+@import 'partials/contact';
+@import 'partials/about';
+
+// Page animations
+.page        {
+    bottom:0;
+    padding-top:0px;
+    position:absolute;
+    text-align:center;
+    top:0;
+    width:100%;
+
+}
+
+@keyframes fadeIn {
+    from    { opacity: 0; }
+    to      { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from    { opacity: 1; }
+    to      { opacity: 0; }
+}
+
+.ng-enter {
+    animation: fadeIn 0.5s both ease-in;
+    z-index: 888;
+}
+
+.ng-leave {
+    animation: fadeOut 0.5s both ease-in;
+    z-index: 998;
+}
+
+// Global Styles
+body {
+    margin: 0;
+}
+
+// Navbar
+.navbar {
+    width: 100vw;
+    height: 4em;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid #888888;
+    .menu-button {
+        height: 100%;
+        width: 8em;
+        @include inline;
+        a {
+            @include centerer(absolute);
+            text-decoration: none;
+            font-size: 1em;
+            color: $mdgrey;
+            font-family: 'Fira Sans';
+            white-space: nowrap;
+            text-transform: uppercase;
+            i {
+                font-size: 1.5em;
+                color: black;
+            }
+        }
+        a:hover {
+            color: black;
+        }
+    }
+    .left {
+        @include inline(left);
+        height: 100%;
+        width: auto;
+        margin-left: 20%;
+    }
+    .right {
+        @include inline(right);
+        height: 100%;
+        width: auto;
+        margin-right: 20%;
+    }
+    .center {
+        @include centerer(absolute);
+        img {
+            width: 10em;
+            height: auto;
+        }
+    }
+}

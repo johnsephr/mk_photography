@@ -1,0 +1,23 @@
+// Dont put styles out here
+.work {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .cd-svg-clipped-slider {
+        @include centerer(absolute);
+    }
+}
+
+// Buttons
+.link-btn {
+    padding: 5px;
+    background-color: white;
+    color: #aaaaaa;
+}
+
+.link-btn:hover {
+    color: black;
+}
+
+
+// Dont put styles out here

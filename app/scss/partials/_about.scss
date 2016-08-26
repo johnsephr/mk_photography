@@ -1,0 +1,71 @@
+// Dont put styles out here
+.about {
+
+    // Dead Space
+
+    .fill-nav {
+        height: 4em;
+        width: auto;
+        background-color: none;
+    }
+
+//    .deadspace {
+//       height: 16em;
+//       width: auto;
+//       background-color: none;
+//    }
+
+    // Skills
+
+    .skills {
+        background-color: none;
+        height: 16em;
+        width: auto;
+        text-align: center;
+        padding-top: 7em;
+    }
+
+
+    // Guitar Image
+    .viewport-music {
+        height: 100vh;
+    }
+    .music {
+
+        .music-photo {
+            height: auto;
+            width: 450px;
+            display: block;
+            float: left;
+            padding: 6em 2em 2em 2em;
+
+            }
+        }
+
+    // Text about Songwriting
+
+    .music-text {
+        height: 10em;
+        width: 50em;
+        background-color: none;
+        float: left;
+        padding-left: 4em;
+        font-family: 'Fira Sans';
+        h1 {
+            font-size: 5.25em;
+            font-weight: 470;
+            padding-bottom: 7px;
+            border-bottom: 1px solid $dkgrey;
+        } p {
+            font-size: 1.5em;
+            padding-top: 10px;
+            font-weight: 300
+        }
+    }
+
+
+
+
+
+    }
+// Dont put styles out here

@@ -1,0 +1,45 @@
+    // Dont put styles out here
+    .page-contact {
+        .contact-wrapper {
+            @include centerer;
+            width: 20%;
+            display: block;
+            border: 5px black;
+        }
+        h1 {
+            margin: 1em;
+            color: $dkgrey;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        input {
+            width: 100%;
+            margin: 2em 0;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid $dkgrey;
+            outline: none;
+        }
+        textarea {
+            @extend input;
+            margin: 0;
+            resize: none;
+        }
+        button {
+            background-color: white;
+            border: 1px solid $dkgrey;
+            color: $dkgrey;
+            width: 100%;
+            height: 2em;
+            margin-top: 1em;
+            outline: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: $dkgrey;
+            color: white;
+
+        }
+    }
+
+    // Dont put styles out here
