@@ -119,13 +119,12 @@
   animation: fadeOut 0.5s both ease-in;
   z-index: 998; }
 
-.navbar {
-  background-color: none;
-  width: 14em;
-  height: 100vh; }
-
 body {
-  margin: 0; }
+  margin: 0;
+  display: inline; }
+
+.navbar {
+  height: 100vh; }
 
 .navigation-logo {
   padding-top: 5em;
@@ -142,14 +141,25 @@ body {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif; }
 
-.photo-categories a {
-  display: block;
-  padding-top: 1em;
-  font-family: "bebas-neue";
-  line-height: 1.3em;
-  font-weight: 400;
-  font-size: 16px; }
-.photo-categories a:hover {
-  color: grey; }
+.photo-categories {
+  padding-left: 2em; }
+  .photo-categories a {
+    display: block;
+    padding-top: 1em;
+    line-height: 1.3em;
+    font-weight: 400;
+    font-size: 16px; }
+  .photo-categories a:hover {
+    color: grey; }
+
+.main-gallery {
+  margin-top: 10vh;
+  height: 90vh; }
+  .main-gallery img {
+    display: inline;
+    height: 40vh;
+    width: auto;
+    margin: none;
+    padding: .5em; }
 
 /*# sourceMappingURL=main.css.map */

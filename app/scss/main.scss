@@ -37,17 +37,16 @@
 }
 
 // Global Styles
-.navbar {
-    background-color: none;
-    width: 14em;
-    height: 100vh;
 
-}
 body {
     margin: 0;
+    display: inline;
 }
 
 // Navbar
+.navbar {
+    height: 100vh;
+}
 .navigation-logo {
     padding-top: 5em;
     padding-left: 3em;
@@ -67,19 +66,44 @@ body {
         }
 }
 .photo-categories {
-
+    padding-left: 2em;
     a {
         display: block;
         padding-top: 1em;
-        font-family: "bebas-neue";
         line-height: 1.3em;
         font-weight: 400;
         font-size: 16px;
+
     }
     a:hover {
         color: grey;
     }
 }
+
+// Home Page Photos
+
+.main-gallery {
+    margin-top: 10vh;
+    height: 90vh;
+    img {
+        display: inline;
+        height: 40vh;
+        width: auto;
+        margin: none;
+        padding: .5em;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
 //.navigation-main {
 //        padding-top: none;
 //        a {
