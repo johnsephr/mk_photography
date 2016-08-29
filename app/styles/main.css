@@ -1,83 +1,155 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+.home .Profile-Photo {
+  height: 100vh;
+  width: auto;
+  display: block;
+  margin: auto; }
+
+.work {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+  .work .cd-svg-clipped-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.link-btn {
+  padding: 5px;
+  background-color: white;
+  color: #aaaaaa; }
+
+.link-btn:hover {
+  color: black; }
+
+.page-contact .contact-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  display: block;
+  border: 5px black; }
+.page-contact h1 {
+  margin: 1em;
+  color: #2A2A2C;
+  text-align: center;
+  text-transform: uppercase; }
+.page-contact input, .page-contact textarea {
+  width: 100%;
+  margin: 2em 0;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #2A2A2C;
+  outline: none; }
+.page-contact textarea {
+  margin: 0;
+  resize: none; }
+.page-contact button {
+  background-color: white;
+  border: 1px solid #2A2A2C;
+  color: #2A2A2C;
+  width: 100%;
+  height: 2em;
+  margin-top: 1em;
+  outline: none;
+  cursor: pointer; }
+.page-contact button:hover {
+  background-color: #2A2A2C;
+  color: white; }
+
+.about .fill-nav {
+  height: 4em;
+  width: auto;
+  background-color: none; }
+.about .skills {
+  background-color: none;
+  height: 16em;
+  width: auto;
+  text-align: center;
+  padding-top: 7em; }
+.about .viewport-music {
+  height: 100vh; }
+.about .music .music-photo {
+  height: auto;
+  width: 450px;
+  display: block;
+  float: left;
+  padding: 6em 2em 2em 2em; }
+.about .music-text {
+  height: 10em;
+  width: 50em;
+  background-color: none;
+  float: left;
+  padding-left: 4em;
+  font-family: 'Fira Sans'; }
+  .about .music-text h1 {
+    font-size: 5.25em;
+    font-weight: 470;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #2A2A2C; }
+  .about .music-text p {
+    font-size: 1.5em;
+    padding-top: 10px;
+    font-weight: 300; }
+
+.page {
+  bottom: 0;
+  padding-top: 0px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+.ng-enter {
+  animation: fadeIn 0.5s both ease-in;
+  z-index: 888; }
+
+.ng-leave {
+  animation: fadeOut 0.5s both ease-in;
+  z-index: 998; }
+
+.navbar {
+  background-color: none;
+  width: 14em;
+  height: 100vh; }
 
 body {
-  padding: 0;
-}
+  margin: 0; }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+.navigation-logo {
+  padding-top: 5em;
+  padding-left: 3em; }
+  .navigation-logo h1 {
+    font-size: 2em;
+    text-align: left;
+    text-transform: uppercase; }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
+.photo-categories a, .navigation-logo a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif; }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+.photo-categories a {
+  display: block;
+  padding-top: 1em;
+  font-family: "bebas-neue";
+  line-height: 1.3em;
+  font-weight: 400;
+  font-size: 16px; }
+.photo-categories a:hover {
+  color: grey; }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+/*# sourceMappingURL=main.css.map */

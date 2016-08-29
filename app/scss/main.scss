@@ -37,57 +37,62 @@
 }
 
 // Global Styles
+.navbar {
+    background-color: none;
+    width: 14em;
+    height: 100vh;
+
+}
 body {
     margin: 0;
 }
 
 // Navbar
-.navbar {
-    width: 100vw;
-    height: 4em;
-    position: fixed;
-    background-color: white;
-    top: 0;
-    z-index: 999;
-    border-bottom: 1px solid #888888;
-    .menu-button {
-        height: 100%;
-        width: 8em;
-        @include inline;
-        a {
-            @include centerer(absolute);
-            text-decoration: none;
-            font-size: 1em;
-            color: $mdgrey;
-            font-family: 'Fira Sans';
-            white-space: nowrap;
+.navigation-logo {
+    padding-top: 5em;
+    padding-left: 3em;
+        h1 {
+            font-size: 2em;
+            text-align: left;
             text-transform: uppercase;
-            i {
-                font-size: 1.5em;
-                color: black;
-            }
-        }
-        a:hover {
-            color: black;
-        }
-    }
-    .left {
-        @include inline(left);
-        height: 100%;
-        width: auto;
-        margin-left: 20%;
-    }
-    .right {
-        @include inline(right);
-        height: 100%;
-        width: auto;
-        margin-right: 20%;
-    }
-    .center {
-        @include centerer(absolute);
-        img {
-            width: 10em;
-            height: auto;
-        }
     }
 }
+.photo-categories,.navigation-logo {
+    a {
+        text-decoration: none;
+        color: black;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        }
+}
+.photo-categories {
+
+    a {
+        display: block;
+        padding-top: 1em;
+        font-family: "bebas-neue";
+        line-height: 1.3em;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    a:hover {
+        color: grey;
+    }
+}
+//.navigation-main {
+//        padding-top: none;
+//        a {
+//            text-decoration: none;
+//            list-style-type: none;
+//            text-transform: uppercase;
+//            color: grey;
+//            display: block;
+//            padding-bottom: 1em;
+//        }
+//}
+//.navigation-main a:hover {
+//    color: black;
+//}
+
+
